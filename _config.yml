@@ -1,0 +1,18 @@
+# Header
+title: IRON BLOG
+
+# https://materializecss.com/color.html 참조
+color:
+  main: darken-1
+
+menu:
+  홈: /
+  자료실: /archives
+
+# 구글 통계 [Google Analytics]
+
+# 구글 광고 [Google AdSense]
+
+# 검색기능 제공 API  [Algolia]
+
+# 댓글 서비스 [DISQUS]
