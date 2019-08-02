@@ -1,3 +1,16 @@
-<% page.posts.each(function(item){ %>
-    <%- partial('_partial/post', {item: item}) %>
-<% }); %>
+<% page.posts.each(function(post){ %>
+<div class="col s12 m4" style="padding: 0px 2px 0px 2px">
+  <div class="card small">
+    <div class="card-image">
+      <img src="https://picsum.photos/id/<%- Math.floor(Math.random() * 201)%>/441/180">
+      <span class="card-title"><%= post.title %></span>
+    </div>
+    <div class="card-content">
+      <p><%= date(post.date, config.date_format) %></p>
+    </div>
+    <div class="card-action">
+      <a href="<%- url_for(post.path) %>">더보기</a>
+    </div>
+  </div>
+</div>
+<% }) %>

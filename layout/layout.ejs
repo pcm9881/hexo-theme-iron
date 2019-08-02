@@ -3,23 +3,25 @@
   <%- partial('_partial/head') %>
   </head>
   <body>
-    <div class="container">
-      <!-- header -->
-      <div class="row">
-        <div>
-        <%- partial('_partial/header') %>
+    <div class="row"> 
+      <%- partial('_partial/menu') %>
+      <div class="col s12">
+        <div class="row grid-iron">
+          <div class="col offset-s3 s9">
+          <%- partial('_partial/header') %>
+          </div>
         </div>
-      </div>
-      <!-- content -->
-      <div class="row">
-        <div>
-        <%- partial('_partial/content') %>
-        </div>
-      </div>
-      <!-- footer -->
-      <div class="row">
-        <div>
-       <%- partial('_partial/footer') %>
+
+        
+        <div class="container">
+          <!-- content -->
+          <div class ="row">
+          <%- body %>
+          </div>
+          <!--footer-->
+          <div class ="row">
+          <%- partial('_partial/footer') %>
+          </div>
         </div>
       </div>
     </div>

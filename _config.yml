@@ -6,8 +6,8 @@ color:
   main: darken-1
 
 menu:
-  홈: /
-  자료실: /archives
+  블로그: /
+  아카이브: /archives
 
 # 구글 통계 [Google Analytics]
 

@@ -1,0 +1,18 @@
+<!-- 메뉴화면 -->
+<ul class="sidenav sidenav-fixed">
+  <li class="center-align">
+  <img src="/images/com.jpg">
+  </li>
+  <li class="valign-wrapper">
+    <div class="input-field col offset-s1 s9">
+      <input id="search_text" type="text" data-length="10">
+      <label for="search_text">검색어를 입력하세요.</label>
+    </div>
+    <div class="col s2 ">
+      <a class="btn-floating cyan pulse"><i class="small material-icons">search</i></a>
+    </div>
+  </li>
+  <% for (var i in theme.menu){ %>
+  <li><a class="waves-effect waves-teal" href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+  <% } %>
+</ul>
